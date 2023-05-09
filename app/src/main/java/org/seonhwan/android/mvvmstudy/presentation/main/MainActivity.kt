@@ -7,7 +7,7 @@ import org.seonhwan.android.mvvmstudy.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private val factory = MainFactory(100)
+    private val factory = MainFactory(100, this)
     private val viewModel by viewModels<MainViewModel>() { factory }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             btMainIncrease.setOnClickListener {
                 viewModel.counter += 1
                 tvMainCounter.text = viewModel.counter.toString()
+                viewModel.saveState()
             }
         }
     }
