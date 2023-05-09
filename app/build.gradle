@@ -49,12 +49,12 @@ dependencies {
 
     // ViewModel 사용하기
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1"
 
     // ViewModel 생성함수를 편하게 사용하기
     implementation "androidx.fragment:fragment-ktx:1.5.7"
     implementation "androidx.activity:activity-ktx:1.7.1"
 
-
+    // 충돌 문제 해결
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
-
 }
