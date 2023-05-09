@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mvvm Study</string>
+    <string name="main_increase">INCREASE</string>
+</resources>
