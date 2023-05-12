@@ -57,4 +57,7 @@ dependencies {
 
     // 충돌 문제 해결
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+
+    // live data
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1"
 }
